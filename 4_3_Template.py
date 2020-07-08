@@ -90,7 +90,7 @@ if __name__ == "__main__":
 
 
 # hooks: give subclass ability to hook into the algorithm whenever needed
-# moulding the exisitng functionality like changeing the day 2 plan
+# moulding the exisitng functionality like changing the day 2 plan
 
 # Hollywood design principle: Dont call us, we will call you
 # Production houses call actors if there is any rol for the actors

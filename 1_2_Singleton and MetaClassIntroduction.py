@@ -114,6 +114,13 @@ if __name__ == "__main__":
         print("Checking ", hc2._servers[i])
 
 
+# Drawbacks  see book
+# global variables accidently changed
+# multiple reference created
+# all classes dependent on global variables get tightly coupled
+
+
+
     
 
 

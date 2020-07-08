@@ -1,0 +1,52 @@
+Object oriented concepts:
+1. Encapsulation  : A objects behavior is kept hidden from the outside world, objects keep their state information private
+2. Polymorphism : provide different implementation of same behavior
+    static : function overloading(different signature),  operator overloading
+    dynamic : run time inference: abstract class, interfaces
+
+3. Inheritance : interits properties and allow reusablity
+
+4. Abstraction : it abstracts the complexity of internal classes so that client is not aware of internal implementation.
+    method and attribute combination
+
+5. Composition : Way of combining objects /classes into more complex data structures or software implementation
+
+
+Object Oriented Design Principle:
+1. Open/ Close principle: Classes or objects and methods should be open for extension but closed for modifications
+    Rather extend the class to build new behavior
+    Advantages: existing class not changed, chances of regression less.
+                maintains backward compatibility
+
+2. Inversion of Control Principle: High level modules shouldnt be dependent on low level modules, they should be dependent 
+                                   on abstractions. Details should depend on abstractions and not the other way around.
+
+                                   2 modules shouldnt be dependent on each other in a tight way
+
+Advantages: tight coupling is not there
+            clear absraction between dependent modules
+
+3. interface Segregation Principle : Clients shouldnt be forced to depend on interfaces they dont use.
+
+                                    If any method is not related to the interface, class dependent on the interface has to
+                                    implement it.
+
+Advantages: forces to write this interfaces
+            redundant code not there
+
+4. Single Responsibility Principle : Class should have only one reason to change.
+                                    If class needs to be changed because of multiple behavior, change it.
+
+5. Substitution Principle : Derived classes must be able to completely substitute the base classes.
+                            Derived class should be as close to the base class
+
+
+Concepts:
+23  design patterns
+
+Advantages:
+1. Reusable across multiple  projects
+2. Architectural level of programs can be solved
+3. Time tested and well proven
+4. They have reliability and dependence
+

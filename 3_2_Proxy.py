@@ -1,3 +1,4 @@
+# Structural pattern
 # Client: which wants the action to be performed
 # Proxy: agent, which provides access to the real subject
 # Subject: provides representation for both, realsubject and proxy.vProxy and realsubject implements subject ,  action to be performed

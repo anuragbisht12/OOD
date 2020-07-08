@@ -31,19 +31,19 @@ class Singleton(object):
 
 
 class Singleton2:
-  __instance = None
+  _instance = None
 
   def __init__(self):
-    if not Singleton2.__instance:
+    if not Singleton2._instance:
       print("__init__ method called but nothing is created")
     else:
       print("instance already created:", self.getInstance())
 
   @classmethod
   def getInstance(cls):
-    if cls.__instance is None:
-      cls.__instance = Singleton2()
-    return cls.__instance
+    if cls._instance is None:
+      cls._instance = Singleton2()
+    return cls._instance
 
 
 if __name__ == "__main__":
