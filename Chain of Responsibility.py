@@ -13,10 +13,10 @@ the first available employee.
 """
 
 
+
+
 from abc import ABCMeta, abstractmethod
 from random import random
-
-
 class CallCenter(metaclass=ABCMeta):
     """
     A call center class that will be inherited from by the director
@@ -26,6 +26,13 @@ class CallCenter(metaclass=ABCMeta):
         number: Mobile phone number of the employee
         level: Define level of the employee - respondent, manager or director
     """
+
+    @classmethod
+    def dispatchCall(self, cls):
+        return cls.answerCall()
+
+
+class Employee(metaclass=ABCMeta):
 
     def __init__(self, name, number, level):
         self.name = name
@@ -43,10 +50,6 @@ class CallCenter(metaclass=ABCMeta):
         busy = True if random() <= 0.5 else False
         return busy
 
-    @classmethod
-    def dispatchCall(self,cls):
-        return cls.answerCall()
-
     @abstractmethod
     def answerCall(self):
         """Print a string indicating that this employee is currently
@@ -54,7 +57,7 @@ class CallCenter(metaclass=ABCMeta):
         pass
 
 
-class Director(CallCenter):
+class Director(Employee):
     """
     A class definition for the director who will be the third in chain
     to answer the call
@@ -97,5 +100,4 @@ if __name__ == "__main__":
     director = Director("Alex", "+17654736791", "director")
     manager = Manager("Unai", "+331577285782", "manager")
     respondent = Respondent("Mark", "+16574872817", "respondent")
-
     CallCenter.dispatchCall(respondent)
