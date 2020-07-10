@@ -57,8 +57,8 @@ if __name__ == "__main__":
     s1 = Singleton2()
 
     # This returns None although the object is initialized
-    print(s._Singleton2__instance)
-    print(s1._Singleton2__instance)
+    print(s._Singleton2_instance)
+    print(s1._Singleton2_instance)
 
     # We now explicitly initialize the object:
     s.getInstance()
